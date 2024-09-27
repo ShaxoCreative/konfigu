@@ -12,7 +12,10 @@ with ZipFile('files.zip', 'a') as myzip:
         elif command == "uname":
             print("Linux")
         elif command == "pwd":
-            print("/home/user")
+            if dirname == "":
+                print("/root")
+            else:
+                print("/root/" + dirname)
         elif command.startswith('cd'):
             if len(command) == 2:
                 dirname = ""
