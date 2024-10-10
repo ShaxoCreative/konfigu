@@ -52,7 +52,7 @@ entry.grid(row=0, column=0, padx=10, pady=10)
 send_button = tk.Button(root, text="Enter", command=process_command)
 send_button.grid(row=0, column=1, padx=10, pady=10)
 
-output_text = scrolledtext.ScrolledText(root, width=70, height=20)
+output_text = scrolledtext.ScrolledText(root, width=70, height=50)
 output_text.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
 
 root.mainloop()
